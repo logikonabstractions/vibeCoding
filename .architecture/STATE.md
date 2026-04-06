@@ -1,8 +1,5 @@
 # STATE
 
-This file tracks large, "hot topics" that are ongoing. It may not be active all the time.
-
-
 ## State management rules
 
 - The current target system should remain stable during a draft unless a human changes the problem statement or scope.
@@ -12,30 +9,26 @@ This file tracks large, "hot topics" that are ongoing. It may not be active all 
 ## Current focus
 
 - Revision ID: Arch.0.1
-- Status: NOT_STARTED  <!-- one of: NOT_STARTED | IN_PROGRESS | IN_REVIEW | DONE -->
+- Status: FREEZE
 
 ## Objective (current draft)
-<!-- 1 sentence. Keep aligned with `.architecture/ARCHITECTURE_DESCRIPTION.md`. -->
+
+Architecture workflow framework frozen as stable. Templates and workflow contracts are locked for downstream use.
 
 ## Active assumptions / constraints
-<!-- Keep only the assumptions or constraints that materially affect the current architecture draft. -->
-- <assumption or constraint>
+
+- The architecture workflow structure (AGENTS.md, AGENTS_ARCHITECTURE.md, meta-templates) is considered stable and ready for downstream work.
 
 ## Work log (current session)
-<!-- Append-only bullets for what changed and why. Prefer file/section references. -->
-- YYYY-MM-DD: <change made and reason>
 
-## Workflow state
-<!-- Dispatcher flags. Checked = active/needed. Cleared once handled. -->
-- [ ] PROBLEM_CLARIFIED
-- [ ] DRAFT_CREATED
-- [ ] HUMAN_REVIEW_REQUIRED
-- [ ] DECISIONS_CAPTURED
+- 2026-03-22: Architecture mode frozen per human reviewer approval. Workflow contracts and templates locked.
 
-## Active issues
-<!-- Keep only active issues here. Move resolved items to HISTORY.md. -->
-- [ ] Arch.0.1: <short title>
-  - Impact: QUESTION <!-- QUESTION | MINOR | MAJOR | BLOCKER -->
-  - Status: NOT_STARTED <!-- one of: NOT_STARTED | IN_PROGRESS | IN_REVIEW | DONE -->
-  - Unblock condition: <what must be true to proceed>
-  - Notes: <optional context>
+## Key Architecture Decisions
+
+- Architecture workflow uses three modes: **architecture**, **component**, and **vibe** (with sub-modes **vibe-draft** and **vibe-implement**)
+- Elements are described by **role/function**, not by implementation choice — no concrete product names at architecture level
+- Element numbering uses increments of 10 (10, 20, 30…)
+- DISCUSSION.md serves as the question & investigation backlog for blocking architectural choices
+- HISTORY.md is append-only for traceability
+- STATE.md tracks current execution state; resolved items move to HISTORY.md
+- All templates originate from `/meta_templates/.architecture`

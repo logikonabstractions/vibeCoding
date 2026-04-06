@@ -3,7 +3,7 @@
 ## Current focus
 
 - Revision ID: Arch.0.1
-- Status: NOT_STARTED  <!-- one of: NOT_STARTED | IN_PROGRESS | IN_REVIEW | DONE -->
+- Status: NOT_STARTED  <!-- one of: NOT_STARTED | IN_PROGRESS | IN_REVIEW | DONE | FREEZE -->
 
 ## Objective (current draft)
 <!-- 1 sentence. Keep aligned with `.architecture/ARCHITECTURE_DESCRIPTION.md`. -->
@@ -22,6 +22,12 @@
 - [ ] DRAFT_CREATED
 - [ ] HUMAN_REVIEW_REQUIRED
 - [ ] DECISIONS_CAPTURED
+
+## Key Architecture Decisions
+<!-- Populated at FREEZE. Summarize the major orientations chosen during the architecture review.
+     This section is the primary reference for downstream agents (component, vibe).
+     Use concise bullet points. Examples: cloud provider, core patterns, technology families, key constraints. -->
+- <decision>
 
 ## Active issues
 <!-- Keep only active issues here. Move resolved items to HISTORY.md. -->
