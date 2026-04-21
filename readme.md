@@ -8,9 +8,7 @@ This document is human-oriented and not to be considered for agent workflows.
 * Add CLEAR instruction that is something is ask about a checkpoint X.Y that doesn't exist, the agent MUST stop & ask for claricafion and not do anything.
 
 ## TODO
-* update this readme to explain new workflows
-
-This repository tracks agentic work using state files only.
+* Update all files & templates for better readability in rendered .md. Like newlines under sections, fewer bullets & more titles, etc.
 
 ## Modes
 
