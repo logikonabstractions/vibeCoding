@@ -9,6 +9,8 @@ This file is the overriding, baseline workflow contract. Each mode-specific `.<m
 ## Generic instructions
 	- The mode (**architecture**, **component** or **vibe**) must be clearly specified. Either earlier in the conversation (e.g. it is clear from conversation history which mode is expected) or explicitly in the prompt. If you are unsure, you MUST ask to confirm.
 	- Treat repository paths as **repo-root relative** unless a document says otherwise.
+	- When refering an architectural element (e.g. 35) or a component (p.ex. 35.2), always include in parenthesis a short name (e.g. element 35 (Data stream), component 35.2(Lake Writer)). Favour short name, not necessarily full-length presented in the title.
+
 
 ## Instruction precedence & read order
 
