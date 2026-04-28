@@ -3,6 +3,9 @@
 This document is human-oriented and not to be considered for agent workflows.
 
 ## TODO & CURRENT STATE
+* Soften wording in `architecture_agents.md` about not using specific tech names. Allow when those are already determined at archicture elaboration time.
+
+
 =======
 ## ROADMAP - VIBECODING
 * Add CLEAR instruction that is something is ask about a checkpoint X.Y that doesn't exist, the agent MUST stop & ask for claricafion and not do anything.
