@@ -68,3 +68,6 @@ Found under `/meta_templates/.vibe`
 ## Version control policy
 - The commit message MUST ALWAYS follow this format for `VIBE-IMPLEMENT` (and if you can, the PR title/message as well): <checkpoint-id> - <checkpoint name>
 - Commit coherent changes: a commit should be a single set of related and consistent changes towards a given checkpoint.
+
+## Best practices & preferences
+- Use local environement whenever possible (virtualenv for python, local node_module for js, etc.) and avoid polluting system-wide environments
