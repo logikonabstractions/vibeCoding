@@ -4,6 +4,7 @@ This document is human-oriented and not to be considered for agent workflows.
 
 ## TODO & CURRENT STATE
 * Soften wording in `architecture_agents.md` about not using specific tech names. Allow when those are already determined at archicture elaboration time.
+* Add a STATUS in vibe-implement so we know which checkpoint are done and no.
 
 
 =======
