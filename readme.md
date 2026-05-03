@@ -30,10 +30,22 @@ This document is human-oriented and not to be considered for agent workflows.
 ## Vibe workflow files
 
 - `.vibe/agents_vibe.md` — implementation workflow contract
-- `.vibe/plan.md` — implementation checkpoint backlog
+- `.vibe/plan.md` — implementation checkpoint backlog (active checkpoints only)
+- `.vibe/plan_history.md` — archived DONE/CANCELLED checkpoint blocks (created by `/vibe_cleanup`)
 - `.vibe/state.md` — active checkpoint and current session state
 - `.vibe/history.md` — completed checkpoints and resolved issues
 - `.vibe/context.md` — optional handoff notes and durable context
+
+## Keeping plan.md clean
+
+As `plan.md` grows, use the `/vibe_cleanup` skill to archive completed work:
+
+```
+/vibe_cleanup            # archive all [DONE] and [CANCELLED] checkpoints
+/vibe_cleanup --dry-run  # preview what would be archived without changing files
+```
+
+Full checkpoint content moves to `.vibe/plan_history.md`; a one-line stub is left in `plan.md` so IDs stay traceable.
 
 ## Canonical templates (DRY)
 

@@ -27,6 +27,7 @@ Given a component identifier, read its description from `.component/components_d
 6. `.vibe/state.md`
 7. `.vibe/history.md`
 8. `.vibe/context.md`
+9. 
 
 ---
 
@@ -41,7 +42,7 @@ Given a checkpoint identifier, implement it according to `.vibe/plan.md`.
 4. `.vibe/state.md`
 5. `.vibe/history.md`
 6. `.vibe/context.md`
-
+7. `.vibe/plan_history.md` for reference (archived checkpoints and stages)
 ---
 
 ## Meta-templates
@@ -54,6 +55,7 @@ Found under `/meta_templates/.vibe`
 | `/meta_templates/.vibe/plan_tplt.md` | Ordered list of checkpoints with objectives and acceptance criteria |
 | `/meta_templates/.vibe/history_tplt.md` | Completed checkpoints and decisions |
 | `/meta_templates/.vibe/context_tplt.md` | Shared context: architecture notes, key decisions, gotchas, hot files |
+| `/meta_templates/.vibe/plan_history_tplt.md` | Archived DONE/CANCELLED checkpoint blocks moved from `plan.md` by `/vibe_cleanup` |
 
 ## Scope and cadence
 - A **stage** groups a few related checkpoints.
@@ -66,6 +68,10 @@ Found under `/meta_templates/.vibe`
 - When a checkpoint moves to DONE, update `.vibe/state.md` to reflect the new state.
 - NEVER remove checkpoints from `.vibe/plan.md` unless explicitly asked to.
 - NEVER re-number checkpoints unless explicitly asked to.
+
+## Plan cleanup
+
+Over time `.vibe/plan.md` accumulates `[DONE]` and `[CANCELLED]` checkpoint blocks. The skill `/vibe_cleanup` may be used to archive them to `plan_history.md`. You should only ever perform that upon explicit request.
 
 ## Version control policy
 - The commit message MUST ALWAYS follow this format for `VIBE-IMPLEMENT` (and if you can, the PR title/message as well): <checkpoint-id> - <checkpoint name>
