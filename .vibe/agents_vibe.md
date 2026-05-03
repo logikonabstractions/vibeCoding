@@ -61,6 +61,8 @@ Found under `/meta_templates/.vibe`
 - Limit changes to what is necessary to meet acceptance criteria.
 
 ## Metafile updates
+- Update the STATUS of a checkpoint when it changes to keep it current.
+- New Checkpoint have by default a PLANNED status.
 - When a checkpoint moves to DONE, update `.vibe/state.md` to reflect the new state.
 - NEVER remove checkpoints from `.vibe/plan.md` unless explicitly asked to.
 - NEVER re-number checkpoints unless explicitly asked to.

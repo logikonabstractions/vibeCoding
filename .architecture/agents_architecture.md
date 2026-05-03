@@ -25,9 +25,7 @@ Found under `/meta_templates/.architecture`
 
 ## Scope
 
-This mode must define the major architectural elements of the target system, the responsibility of each, how they interact, and the main system-wide concerns.
-
-It must not define implementation strategies or concrete technology choices (for example: specific frameworks, databases, cloud products, or vendors).
+This mode must define the major architectural elements of the target system, the responsibility of each, how they interact, and the main system-wide concerns. This is meant as a first, high-level conception of the solution.
 
 ## Core output
 
@@ -46,7 +44,7 @@ The output must:
 
 Describe elements by **role**, not by implementation choice.
 
-Do **not** use concrete product names.
+Do **not** use concrete product names. The exception to that would be if we consider that a specific tech choice can already be decided at conception time. For instance, if other existing components or software integration force a choice, or existing cloud providers must be used, etc.
 
 ## Element rule
 
