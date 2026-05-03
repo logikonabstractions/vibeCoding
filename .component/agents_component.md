@@ -1,18 +1,19 @@
-# COMPONENT Workflow Contract
+# COMPONENT WORKFLOW CONTRACT
 
 ## Purpose
 
 Translate **one architectural element** into a **component-level design**.
 
 ## Instruction precedence & read order
-1. As specified by `agents.md`
-2. This file
-3. `.component/components_descriptions.md`
-4. `.component/state.md`
-5. `.component/discussion.md`
-6. `.component/history.md`
-7. `.architecture/state.md` — specifically the `Key Architecture Decisions` section (read-only reference)
-8. `.architecture/architecture_description.md` (read-only reference)
+
+  + As specified by `agents.md`
+  + This file
+  + `.component/components_descriptions.md`
+  + `.component/state.md`
+  + `.component/discussion.md`
+  + `.component/history.md`
+  + `.architecture/state.md` — specifically the `Key Architecture Decisions` section (read-only reference)
+  + `.architecture/architecture_description.md` (read-only reference)
 
 ## Meta-templates
 
@@ -35,8 +36,9 @@ The deliverable is a complete list of components, conform to the format in `comp
 ## Input requirements
 
 The prompt must provide or reference:
-- the target architectural element number (e.g. "element 10")
-- access to the current `.architecture/architecture_description.md` (or its relevant section)
+
+  + the target architectural element number (e.g. "element 10")
+  + access to the current `.architecture/architecture_description.md` (or its relevant section)
 
 If the architecture has not been frozen (status ≠ FREEZE in `.architecture/state.md`), log a warning in `.component/state.md` but proceed unless explicitly told to stop.
 
@@ -47,10 +49,11 @@ If the architecture has not been frozen (status ≠ FREEZE in `.architecture/sta
 Describe each component by **concrete role and technology**. A component is the unit of work required to implement part of the target architectural element.
 
 The correct level of abstraction for a component (10.1, 10.2, ...) is one where:
-- A specific technology (or set of technologies) is identified for implementation
-- The component has a clear objective and coherent set of responsibilities
-- It maps to a recognizable deliverable (a service, a schema, a configured runtime, a UI module, ...)
-- It remains large enough to require multiple checkpoints to deliver (roughly the size of one or a few sprints)
+
+  + A specific technology (or set of technologies) is identified for implementation
+  + The component has a clear objective and coherent set of responsibilities
+  + It maps to a recognizable deliverable (a service, a schema, a configured runtime, a UI module, ...)
+  + It remains large enough to require multiple checkpoints to deliver (roughly the size of one or a few sprints)
 
 For example, a component could be: "Authentication mechanism", with chosen technologies (e.g. OAuth 2.0 implemented with Passport.js, hashing with bcrypt, ...). It should not be "A social media app" (too broad) nor should it be "A sign-in form" (that would be a checkpoint to implement).
 
@@ -58,12 +61,11 @@ For example, a component could be: "Authentication mechanism", with chosen techn
 
 Components are numbered as sub-elements of their parent architectural element, appending a component_id to each (.1, 2., .3, ...)
 
-- Architectural element 10 → components 10.1, 10.2, ..., 10.14...
-- Architectural element 20 → components 20.1, 20.2, 20.3 ...
+  + Architectural element 10 → components 10.1, 10.2, ..., 10.14...
+  + Architectural element 20 → components 20.1, 20.2, 20.3 ...
 
 There is no fixed upper bound on component count — use as many as relevant.
 
-
 ## Question lifecycle
 
-1. Create a `Comp-N.N` item in `.component/discussion.md`, following instructions provided there.
+  + Create a `Comp-N.N` item in `.component/discussion.md`, following instructions provided there.

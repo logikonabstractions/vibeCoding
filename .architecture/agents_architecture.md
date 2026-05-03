@@ -1,16 +1,17 @@
-# ARCHITECTURE Workflow Contract
+# ARCHITECTURE WORKFLOW CONTRACT
 
 ## Purpose
 
 Translate a product or problem statement into an **architectural design**.
 
 ## Instruction precedence & read order
-1. As specified by `agents.md`
-2. This file
-3. `.architecture/architecture_description.md`
-4. `.architecture/state.md`
-5. `.architecture/discussion.md`
-6. `.architecture/history.md`
+
+  + As specified by `agents.md`
+  + This file
+  + `.architecture/architecture_description.md`
+  + `.architecture/state.md`
+  + `.architecture/discussion.md`
+  + `.architecture/history.md`
 
 ## Meta-templates
 
@@ -34,12 +35,12 @@ The deliverable is a markdown document that gives a **structured architectural b
 
 The output must:
 
-- describe the target system in plain language
-- identify the major architectural elements required
-- describe each element at the **functional type** level
-- define responsibilities for each element
-- capture the important interfaces and interactions between elements
-- capture relevant system-wide concerns, assumptions, constraints, and open questions
+  + describe the target system in plain language
+  + identify the major architectural elements required
+  + describe each element at the **functional type** level
+  + define responsibilities for each element
+  + capture the important interfaces and interactions between elements
+  + capture relevant system-wide concerns, assumptions, constraints, and open questions
 
 ## Abstraction rule
 
@@ -57,7 +58,6 @@ Do not model low-level implementation artifacts as architectural elements.
 
 Use top-level element numbering in increments of 10 (10, 20, 30...)
 
-
 ## Architecture planning rule
 
 Use `.architecture/discussion.md` to track architecture questions that require discussion, investigation, clarification, or explicit decision. Do not over-use this track for minor decisions. Keep it for blocking architectural choices.
@@ -70,16 +70,16 @@ When the architecture has been reviewed, approved, and is considered stable, it 
 
 When the human reviewer confirms the architecture is ready to freeze:
 
-1. **Update `.architecture/state.md`**:
-   - Set `Status` to `FREEZE`
-   - Remove all HTML comments and placeholder text (clean up the template artifacts)
-   - Add a `## Key Architecture Decisions` section summarizing the major orientations chosen during the architecture review (providers, core patterns, technology families, key constraints, priorities.) as concise bullet points. This section is the **primary reference** for downstream agents working on components
-   - Clear the `Active issues` section (move any remaining items to `history.md`)
-   - Clear the `Workflow state` checkboxes
+  + **Update `.architecture/state.md`**
+    + Set `Status` to `FREEZE`
+    + Remove all HTML comments and placeholder text (clean up the template artifacts)
+    + Add a `## Key Architecture Decisions` section summarizing the major orientations chosen during the architecture review (providers, core patterns, technology families, key constraints, priorities.) as concise bullet points. This section is the **primary reference** for downstream agents working on components
+    + Clear the `Active issues` section (move any remaining items to `history.md`)
+    + Clear the `Workflow state` checkboxes
 
-2. **Update `.architecture/history.md`**: append a FREEZE entry recording the date and revision that was frozen.
+  + **Update `.architecture/history.md`**: append a FREEZE entry recording the date and revision that was frozen.
 
-3. **Update this file or other architecture documents** if any process notes need to reflect the frozen state.
+  + **Update this file or other architecture documents** if any process notes need to reflect the frozen state.
 
 ### Purpose of Key Architecture Decisions
 
@@ -87,4 +87,4 @@ The `Key Architecture Decisions` section in state.md serves as a compact referen
 
 ## Question lifecycle
 
-1. Create an `Arch-N.N` item in `.architecture/discussion.md`. Follow instructions provided there.
+  + Create an `Arch-N.N` item in `.architecture/discussion.md`. Follow instructions provided there.
