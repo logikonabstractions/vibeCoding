@@ -11,7 +11,7 @@ Translate a product or problem statement into an **architectural design**.
   + `.architecture/architecture_description.md`
   + `.architecture/state.md`
   + `.architecture/discussion.md`
-  + `.architecture/history.md`
+  + `.architecture/history.md` (optional — skip if session is a quick status check)
 
 ## Meta-templates
 
@@ -21,6 +21,7 @@ Found under `/meta_templates/.architecture`
 |------|------|
 | `/meta_templates/.architecture/architecture_description_tplt.md` | Format for each architectural element description |
 | `/meta_templates/.architecture/state_tplt.md` | Current draft, focus, active blockers, work log |
+| `/meta_templates/.architecture/discussion_tplt.md` | Architecture questions requiring clarification or decision |
 | `/meta_templates/.architecture/history_tplt.md` | Resolved questions, completed review rounds, durable decisions |
 
 ## Scope
@@ -29,7 +30,7 @@ This mode must define the major architectural elements of the target system, the
 
 ## Core output
 
-The deliverable is a markdown document that gives a **structured architectural breakdown** of the proposed solution, conforming to `architecture_description.md`.
+The deliverable is a markdown document that gives a **structured architectural breakdown** of the proposed solution. Format is defined by `meta_templates/.architecture/architecture_description_tplt.md`; the live working file is `.architecture/architecture_description.md`.
 
 The output must:
 
@@ -71,7 +72,7 @@ When the human reviewer confirms the architecture is ready to freeze:
   + **Update `.architecture/state.md`**
     + Set `Status` to `FREEZE`
     + Remove all HTML comments and placeholder text (clean up the template artifacts)
-    + Add a `## Key Architecture Decisions` section summarizing the major orientations chosen during the architecture review (providers, core patterns, technology families, key constraints, priorities.) as concise bullet points. This section is the **primary reference** for downstream agents working on components
+    + Populate the `## Key Architecture Decisions` section summarizing the major orientations chosen during the architecture review (providers, core patterns, technology families, key constraints, priorities.) as concise bullet points. This section is the **primary reference** for downstream agents working on components
     + Clear the `Active issues` section (move any remaining items to `history.md`)
     + Clear the `Workflow state` checkboxes
 

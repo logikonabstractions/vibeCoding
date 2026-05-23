@@ -1,4 +1,28 @@
-**Template file, copy but do not edit**
+# PROBLEM STATEMENT
+
+## Objective
+
+  **System:** [Description of what system is being designed]
+
+  **Users:** [Description of who it serves/uses it]
+
+  **Primary outcomes**
+
+    + [what it must enable]
+
+## Scope boundaries
+
+**In scope**
+
+  + [items]
+
+**Out of scope**
+
+  + [items]
+
+## Assumptions
+
+  + [assumptions]
 
 # Architectural elements
 

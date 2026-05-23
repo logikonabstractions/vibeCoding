@@ -6,10 +6,9 @@
   + Use it for architecture drafts, resolved issues, major review outcomes, and durable architectural decisions.
   + Prefer pointers to files, commits, or review notes instead of copying large blocks.
 
-## Entry Templates
+## Entry templates
 
 Use the most relevant template below when adding an entry. All entries must conform to one such template.
-
 
 ## Resolved issues
 

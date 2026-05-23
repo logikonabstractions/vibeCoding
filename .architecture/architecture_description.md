@@ -1,8 +1,3 @@
-# ARCHITECTURE DESCRIPTION
-
-The response must provide one or more architectural elements, adhering to this format.
-
-
 # PROBLEM STATEMENT
 
 ## Objective
@@ -43,7 +38,7 @@ Repeat & fill this template as needed. Follow the numbering convention.
 
   **Responsibilities**
 
-    + [responsibilities]
+    + [responsibility]
 
 ### Interfaces
 
@@ -55,7 +50,7 @@ Repeat & fill this template as needed. Follow the numbering convention.
 
   + [responses / commands / events / downstream outputs]
 
-#### Data & state:
+#### Data / state
 
   + [what data or state this element owns, reads, writes, persists, or exposes]
 
@@ -70,11 +65,11 @@ Repeat & fill this template as needed. Follow the numbering convention.
 + **Internal asynchronous**
   + [if applicable]
 
-### Security
+### Security / access considerations
 
   + [authentication / authorization / trust boundary / sensitive data notes]
 
-### Observability
+### Observability / operational considerations
 
   + [logging / monitoring / auditability / failure visibility / admin concerns]
 
@@ -82,7 +77,7 @@ Repeat & fill this template as needed. Follow the numbering convention.
 
   + [Element IDs]
 
-### Constraints / notes:
+### Constraints / notes
 
   + [important remarks]
 
@@ -90,27 +85,42 @@ Repeat & fill this template as needed. Follow the numbering convention.
 
   + 1-2 sentences. Do not systematically include with all elements. Only when there are strong reasons to consider 2 options as very close, describe your 2nd best choice here.
 
-
 # System interaction summary
-## Primary request / control paths:
-  + [items]
-## Main data flows:
-  + [items]
-## Main event flows:
-  + [items]
 
+## Primary request / control paths
+
+  + [summary]
+
+## Primary data flows
+
+  + [summary]
+
+## Primary event flows
+
+  + [summary]
 
 # System-wide concerns
-## Security and access control:
+
+## Security and access control
+
   + [items]
-## Reliability and recovery:
+
+## Reliability and recovery
+
   + [items]
-## Observability and operations:
+
+## Observability and operations
+
   + [items]
-## Performance and scalability:
+
+## Performance and scalability
+
   + [items]
-## Compliance / audit / governance:
+
+## Compliance / audit / governance
+
   + [items if relevant]
 
 # Open questions
-- [question requiring architectural decision]
+
+  + [question requiring architectural decision]
