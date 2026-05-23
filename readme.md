@@ -3,7 +3,10 @@
 This document is human-oriented and not to be considered for agent workflows.
 
 ## TODO & CURRENT STATE
-* None
+* Make the active human-readable files (discussion, plans etc.) more dense so screen real estate is optimized. Too much dead space, use formatting instead of space to higihglyt stuff.
+* When refering to component, arch, checkpoint etc.... always include in () a max 3 words title/name for what this refers to.
+* In architecture/discussion.md, add to each Arch-x.x. element a RESOLUTION field so that we have an obvious conclusion.
+	* Maybe actually add a resolution table template
 
 
 =======
