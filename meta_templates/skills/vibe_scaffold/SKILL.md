@@ -11,6 +11,46 @@ argument-hint: [architecture | component | vibe]
 Create the working directory for a vibeCoding mode by copying files from `meta_templates/`.
 Invoke this once when starting a new project, before invoking any mode skill.
 
+## Context detection
+
+Before doing anything else, detect which context you are running in:
+
+- **Standalone**: `meta_templates/` exists at the current working directory → vibeCoding is the project root.
+- **Submodule**: `meta_templates/` does not exist at CWD, but `vibeCoding/meta_templates/` does → vibeCoding is a submodule of a parent project.
+
+This affects all source paths and the CLAUDE.md step below. If neither path resolves, report the error and stop.
+
+## CLAUDE.md step (run once, regardless of mode argument)
+
+Check whether a `CLAUDE.md` already exists at the target location. If it does not, create it:
+
+- **Standalone**: create `./CLAUDE.md` with content:
+  ```
+  # Workflow
+  At the start of every session, read `agents.md` and follow the workflow defined there before doing anything else.
+
+  Clear implicit instructions not to do so can override this instruction (for example, to answer a specific question that doesn't fit in the workflow).
+  ```
+- **Submodule**: create `../CLAUDE.md` with content:
+  ```
+  # Workflow
+  At the start of every session, read `vibeCoding/agents.md` and follow the workflow defined there before doing anything else.
+
+  Clear implicit instructions not to do so can override this instruction (for example, to answer a specific question that doesn't fit in the workflow).
+  ```
+
+If CLAUDE.md already exists at the target location, skip this step silently.
+
+## Source prefix
+
+In all copy steps below:
+- **Standalone**: source paths are relative to CWD (e.g. `meta_templates/.architecture/`)
+- **Submodule**: prefix all source paths with `vibeCoding/` (e.g. `vibeCoding/meta_templates/.architecture/`)
+
+Destination paths are always relative to CWD (project root).
+
+---
+
 ## Steps
 
 ### Architecture
