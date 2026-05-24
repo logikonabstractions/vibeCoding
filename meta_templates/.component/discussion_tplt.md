@@ -13,7 +13,7 @@
 When a question is resolved:
 
   + Add a relevant entry to `history.md`
-  + Update this file's status to `RESOLVED` along with any field (notes, etc.)
+  + Update this file's status to `RESOLVED` along with any relevant field
 
 ## Active component issues
 
@@ -21,7 +21,7 @@ When a question is resolved:
 
   **Type:** [CLARIFICATION | DECISION | INVESTIGATION | ASSUMPTION_VALIDATION | RISK_REVIEW]
 
-  **Status:** [OPEN | IN_PROGRESS | CANCELLED | DECISION_REQUIRED | RESOLVED]
+  **Status:** [OPEN | IN_PROGRESS | BLOCKED | CANCELLED | DECISION_REQUIRED | RESOLVED]
 
   **Related component(s)**
 

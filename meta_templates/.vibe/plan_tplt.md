@@ -9,9 +9,11 @@
   + NEVER remove checkpoints from this file unless explicitly asked to.
   + NEVER re-number checkpoints unless explicitly asked to.
 
-## Stage [STATUS: PLANNED | IN PROGRESS | FREEZE | DONE | CANCELLED] [COMPONENT ID].[STAGE] — [stage name]
+## Stage [PLANNED] [COMPONENT ID].[STAGE] — [stage name]
+<!-- Stage status: PLANNED | IN PROGRESS | FREEZE | DONE | CANCELLED -->
 
-### [STATUS: PLANNED | IN PROGRESS | FREEZE | DONE | CANCELLED] [COMPONENT ID].[STAGE].[CHECKPOINT] — [checkpoint name]
+### [PLANNED] [COMPONENT ID].[STAGE].[CHECKPOINT] — [checkpoint name]
+<!-- Checkpoint status: PLANNED | IN PROGRESS | FREEZE | DONE | CANCELLED -->
 
   **Objective**
 

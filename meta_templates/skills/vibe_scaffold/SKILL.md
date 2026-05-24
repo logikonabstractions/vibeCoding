@@ -60,11 +60,11 @@ Invoke this once when starting a new project, before invoking any mode skill.
 | `history_tplt.md` | `history.md` |
 
 3. Confirm all 6 files are present, then report: "Vibe mode scaffolded."
-4. Tell the user they can now invoke `/vibe` to begin.
+4. Tell the user they can now invoke `/vibe_draft` or `/vibe_implement` to begin.
 
 ### Skills
 
-Skills associated with this repo live under `meta_templates/skill/`. When scaffolding a project, check that:
+Skills associated with this repo live under `meta_templates/skills/`. When scaffolding a project, check that:
 
-1. the Claude skills in that system (typically `~/.claude/skills/`) contain the `vibe_architecture`, `vibe_component`, `vibe_vibe`, `vibe_cleanup` skills. If not, ask for permission to add them.
-2. If the skills are present under `~/.claude/skills/`, check that they are up to day. They should match those presented here. If different, highlight discrepancies and wait for instructions. 
+1. the Claude skills in that system (typically `~/.claude/skills/`) contain the `vibe_architecture`, `vibe_component`, `vibe_draft`, `vibe_implement`, `vibe_cleanup` skills. If not, ask for permission to add them.
+2. If the skills are present under `~/.claude/skills/`, check that they are up to date. They should match those under `meta_templates/skills/`. If different, highlight discrepancies and wait for instructions.

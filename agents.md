@@ -33,11 +33,13 @@ Do **not** remove or rewrite earlier entries — history.md is append-only.
 
 For all modes, `.<mode>/state.md` tracks current focus, active blockers, and work in progress. Update it whenever focus shifts or a blocker is added/resolved.
 
-## plan.md conventions
+## discussion.md and plan.md conventions
 
-Each mode uses a `plan.md` file, but its role differs by mode:
-- **architecture** and **component**: `plan.md` is a **question & investigation backlog** — not an implementation plan.
+`vibe` modes use a `plan.md` file:
 - **vibe**: `plan.md` is an **ordered checkpoint plan** — the implementation backlog.
+- It is being draft while in **vibe draft** mode and implemented gradually in **vibe implement** mode.
+
+`component` and `architecture` modes use a `discussion.md` file. It allows back & forth to make the best decissions while fleshing out the design decisions for eventul implementation.
 
 See each mode's `agents_<mode>.md` for the specific plan.md semantics and templates.
 
