@@ -61,3 +61,10 @@ Invoke this once when starting a new project, before invoking any mode skill.
 
 3. Confirm all 6 files are present, then report: "Vibe mode scaffolded."
 4. Tell the user they can now invoke `/vibe` to begin.
+
+### Skills
+
+Skills associated with this repo live under `meta_templates/skill/`. When scaffolding a project, check that:
+
+1. the Claude skills in that system (typically `~/.claude/skills/`) contain the `vibe_architecture`, `vibe_component`, `vibe_vibe`, `vibe_cleanup` skills. If not, ask for permission to add them.
+2. If the skills are present under `~/.claude/skills/`, check that they are up to day. They should match those presented here. If different, highlight discrepancies and wait for instructions. 

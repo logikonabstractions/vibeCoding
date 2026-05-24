@@ -2,6 +2,12 @@
 
 This document is human-oriented and not to be considered for agent workflows.
 
+## QUICK START
+
+1. Clone this repo locally
+2. add the `meta_templates/skills/vibe_scaffold/SKILL.md` to claude skills on your system (typically ~/.claude/skills/)
+3. run `claude` in your project's root directly, then `vibe_scaffold`
+
 ## TODO & CURRENT STATE
 * Make the active human-readable files (discussion, plans etc.) more dense so screen real estate is optimized. Too much dead space, use formatting instead of space to higihglyt stuff.
 * When refering to component, arch, checkpoint etc.... always include in () a max 3 words title/name for what this refers to.
