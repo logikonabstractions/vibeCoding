@@ -8,9 +8,14 @@ argument-hint: (none)
 
 ## Purpose
 
-Commit and push changes made inside the `vibeCoding/` submodule to its remote, then update the parent project's submodule pointer.
+Commit and push changes made inside the `vibeCoding/` submodule to its remote, then update the parent project's submodule pointer. **This is a 2-step process:** the agent completes local commits; the user handles the authenticated push.
 
-## Steps
+## Two-Step Workflow
+
+**Step A (Agent):** Verify, stage, and commit changes locally  
+**Step B (User):** Push to remote (requires user's SSH authentication)
+
+## Agent Steps (Complete automatically)
 
 ### 1. Context check
 
@@ -36,13 +41,25 @@ git -C vibeCoding commit -m "<message>"
 
 Generate the commit message from the diff — one concise sentence describing what was improved. Do not ask the user for a message unless the diff is ambiguous.
 
-### 4. Push to remote
+### 4. Ask user for authenticated push
+
+Report the commit hash and message, then request the user to push:
+
+> "Local commit created: `<hash>` — <message>. Now run: `! git -C vibeCoding push origin HEAD` to push with your SSH authentication."
+
+Wait for the user to confirm they've pushed before proceeding.
+
+## User Step (Requires SSH authentication)
+
+### Push to remote
 
 ```
-git -C vibeCoding push origin HEAD
+! git -C vibeCoding push origin HEAD
 ```
 
-Report the push result. If push fails (e.g. diverged), stop and explain — do not force-push.
+Only the user can push because their local shell has SSH agent credentials. Tell the agent once it's done.
+
+## Agent Steps (Resume after user push)
 
 ### 5. Bump submodule pointer in parent project
 
