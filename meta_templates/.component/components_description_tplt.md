@@ -1,20 +1,10 @@
 # COMPONENTS DESCRIPTIONS
 
-# PROBLEM STATEMENT
+# Parent architectural element (repeat as needed)
 
-## Parent architectural element
+  **Parent:** [Parent ID] - [parent name]
 
-  **Parent ID**
-
-    + [10 | 20 | 30 | ...]
-
-  **Parent name**
-
-    + [name from architecture description]
-
-  **Parent purpose**
-
-    + [short summary of the parent architectural role]
+  **Parent purpose:** [short summary of the parent architectural role]
 
 ## Assumptions
 
@@ -24,11 +14,11 @@
 
   + [important constraints: inherited from the architecture, inherent to tech choices, etc.]
 
-# Component breakdown
+## Component breakdown (repeat as needed for this parent element)
 
-## [ARCHITECTURAL_ELEMENT_ID].[COMPO_ID] — [Component name]
+### [ARCHITECTURAL_ELEMENT_ID].[COMPO_ID] — [Component name]
 
-### Description
+#### Description
 
   **Category:** [Frontend system / API service / worker / database / queue / adapter / storage / external integration / observability / other]
 
@@ -40,42 +30,43 @@
 
     + [responsibilities]
 
-### Interfaces
+#### Interfaces
 
-#### Incoming
-
-  + [requests / commands / events / data]
-
-#### Outgoing
+##### Incoming
 
   + [requests / commands / events / data]
 
-#### Data / state
+##### Outgoing
+
+  + [requests / commands / events / data]
+
+##### Data / state
 
   + [what this component owns, persists, caches, or reads]
 
-### Dependencies
+#### Dependencies
 
-#### Internal
+##### Internal
 
   + [other x.y components]
 
-#### External
+##### External
 
   + [architectural elements outside the parent scope, if relevant]
 
-### Observability / operational considerations
+#### Observability / operational considerations
 
   + [logs / metrics / tracing / admin / scaling / failure visibility]
 
-### Constraints / notes
+#### Constraints / notes
 
   + [important implementation constraints]
 
-### Principal alternative (optional)
+#### Principal alternative (optional)
 
   + [close second option and why it was not chosen]
 
-# Open questions
+
+## Open questions
 
   + [question requiring human/component-design decision]
