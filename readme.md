@@ -2,11 +2,35 @@
 
 This document is human-oriented and not to be considered for agent workflows.
 
-## QUICK START
+## QUICK START — standalone (vibeCoding is your project)
 
 1. Clone this repo locally
-2. add the `meta_templates/skills/vibe_scaffold/SKILL.md` to claude skills on your system (typically ~/.claude/skills/)
-3. run `claude` in your project's root directly, then `vibe_scaffold`
+2. Add `meta_templates/skills/vibe_scaffold/SKILL.md` to Claude skills on your system (typically `~/.claude/skills/`)
+3. Run `claude` in your project's root, then `/vibe_scaffold`
+
+## QUICK START — submodule (vibeCoding inside your project)
+
+Use this when vibeCoding is a planning tool nested inside a larger project repo.
+
+```bash
+mkdir myProject && cd myProject
+git init
+git submodule add git@github.com:logikonabstractions/vibeCoding.git vibeCoding
+```
+
+Then in `claude`:
+```
+/vibe_scaffold architecture
+```
+
+`vibe_scaffold` detects the submodule context automatically. It will:
+- Create `.architecture/`, `.component/`, `.vibe/` at your project root (not inside `vibeCoding/`)
+- Create a `CLAUDE.md` at your project root pointing to `vibeCoding/agents.md`
+- Sync any missing skills to `~/.claude/skills/`
+
+**Pulling vibeCoding updates later:** `/vibe_update`
+
+**Pushing improvements back:** `/vibe_improvement`
 
 ## TODO & CURRENT STATE
 * Make the active human-readable files (discussion, plans etc.) more dense so screen real estate is optimized. Too much dead space, use formatting instead of space to higihglyt stuff.
