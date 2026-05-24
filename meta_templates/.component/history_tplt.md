@@ -1,6 +1,14 @@
-**Template file, copy but do not edit**
+# HISTORY
 
-# Resolved issues
+## Rules
+
+  + This file is non-authoritative.
+  + Use it for completed component drafts, resolved issues, major review outcomes, and durable component-design decisions.
+  + Prefer pointers to files, commits, or review notes instead of copying large blocks.
+
+## Entry templates
+
+## Resolved issues
 
   + **[Comp-N.N]:** [TITLE]
 
@@ -9,7 +17,7 @@
     + **Resolution:** [1-2 lines]
     + **Notes:** [optional]
 
-# Component-design decisions
+## Component-design decisions
 
 <!-- Keep only decisions worth preserving across revisions. -->
 
@@ -20,7 +28,7 @@
     + **Rationale:** [1-2 lines]
     + **Impact:** [what parts of the component design this affects]
 
-# Superseded choices / changes
+## Superseded choices / changes
 
 <!-- Optional. Use when previous choices were later invalidated. -->
 

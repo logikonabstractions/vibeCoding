@@ -25,9 +25,8 @@ Given a component identifier, read its description from `.component/components_d
 4. `.component/components_descriptions.md` (read-only reference)
 5. `.vibe/plan.md`
 6. `.vibe/state.md`
-7. `.vibe/history.md`
-8. `.vibe/context.md`
-9. 
+7. `.vibe/context.md`
+8. `.vibe/history.md` (optional — skip if session is a quick status check)
 
 ---
 
@@ -40,9 +39,10 @@ Given a checkpoint identifier, implement it according to `.vibe/plan.md`.
 2. This file
 3. `.vibe/plan.md`
 4. `.vibe/state.md`
-5. `.vibe/history.md`
-6. `.vibe/context.md`
-7. `.vibe/plan_history.md` for reference (archived checkpoints and stages)
+5. `.vibe/context.md`
+6. `.vibe/history.md` (optional — skip if session is a quick status check)
+7. `.vibe/plan_history.md` (optional — skip if session is a quick status check) for reference (archived checkpoints and stages)
+
 ---
 
 ## Meta-templates

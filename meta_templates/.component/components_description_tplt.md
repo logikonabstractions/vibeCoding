@@ -1,4 +1,28 @@
-**Template file, copy but do not edit**
+# COMPONENTS DESCRIPTIONS
+
+# PROBLEM STATEMENT
+
+## Parent architectural element
+
+  **Parent ID**
+
+    + [10 | 20 | 30 | ...]
+
+  **Parent name**
+
+    + [name from architecture description]
+
+  **Parent purpose**
+
+    + [short summary of the parent architectural role]
+
+## Assumptions
+
+  + [assumptions]
+
+## Constraints
+
+  + [important constraints: inherited from the architecture, inherent to tech choices, etc.]
 
 # Component breakdown
 

@@ -11,7 +11,7 @@ Translate **one architectural element** into a **component-level design**.
   + `.component/components_descriptions.md`
   + `.component/state.md`
   + `.component/discussion.md`
-  + `.component/history.md`
+  + `.component/history.md` (optional — skip if session is a quick status check)
   + `.architecture/state.md` — specifically the `Key Architecture Decisions` section (read-only reference)
   + `.architecture/architecture_description.md` (read-only reference)
 
@@ -24,6 +24,7 @@ Found under `/meta_templates/.component`
 | `/meta_templates/.component/components_description_tplt.md` | Output template and deliverable for the component design |
 | `/meta_templates/.component/state_tplt.md` | Current focus, active blockers, work log |
 | `/meta_templates/.component/history_tplt.md` | Resolved questions and completed component reviews |
+| `/meta_templates/.component/discussion_tplt.md` | Component questions requiring clarification or decision |
 
 ## Scope
 
@@ -31,7 +32,7 @@ This mode receives **exactly one architectural element** and breaks it down into
 
 ## Core output
 
-The deliverable is a complete list of components, conform to the format in `components_descriptions.md`
+The deliverable is a complete list of components, conform to the format in `components_descriptions.md`. Format is defined by `meta_templates/.component/components_description_tplt.md`; the live working file is `.component/components_descriptions.md`.
 
 ## Input requirements
 

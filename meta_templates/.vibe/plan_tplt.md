@@ -1,8 +1,17 @@
-**Template file, copy but do not edit**
+# PLAN
 
-# Stage [COMPONENT ID].[STAGE] — [stage name]
+## How to use this file
 
-## [COMPONENT ID].[STAGE].[CHECKPOINT] — [checkpoint name]
+  + The plan organizes work into **stages** (groups of related implementation steps) and **checkpoints** (small, reviewable units within a stage).
+  + Each checkpoint specifies an **Objective**, **Notes**, **Deliverables**, **Acceptance** criteria, **Demo commands**, and **Evidence** pointers.
+  + Update the STATUS of a checkpoint when it changes: PLANNED → IN_PROGRESS → DONE or CANCELLED.
+  + New checkpoints have a PLANNED status by default.
+  + NEVER remove checkpoints from this file unless explicitly asked to.
+  + NEVER re-number checkpoints unless explicitly asked to.
+
+## Stage [STATUS: PLANNED | IN PROGRESS | FREEZE | DONE | CANCELLED] [COMPONENT ID].[STAGE] — [stage name]
+
+### [STATUS: PLANNED | IN PROGRESS | FREEZE | DONE | CANCELLED] [COMPONENT ID].[STAGE].[CHECKPOINT] — [checkpoint name]
 
   **Objective**
 

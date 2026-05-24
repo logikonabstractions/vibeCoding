@@ -1,6 +1,11 @@
-**Template file, copy but do not edit**
+# STATE
 
-# Current focus
+## State management rules
+
+  + Keep this file focused on current execution state. Put rollups and resolved items in `history.md`.
+  + You only use this file when major blockers/issues are present.
+
+## Current focus
 
   **Target element:** [10 | 20 | 30 | …]
 
@@ -8,23 +13,23 @@
 
   **Status:** NOT_STARTED  <!-- one of: NOT_STARTED | IN_PROGRESS | IN_REVIEW | DONE -->
 
-# Objective (current breakdown)
+## Objective (current breakdown)
 
 <!-- 1 sentence. Keep aligned with the target element in `.architecture/architecture_description.md`. -->
 
-# Active assumptions / constraints
+## Active assumptions / constraints
 
 <!-- Keep only the assumptions or constraints that materially affect the current component breakdown. -->
 
   + [assumption or constraint]
 
-# Work log (current session)
+## Work log (current session)
 
 <!-- Append-only bullets for what changed and why. Prefer file/section references. -->
 
   + **YYYY-MM-DD:** [change made and reason]
 
-# Workflow state
+## Workflow state
 
 <!-- Dispatcher flags. Checked = active/needed. Cleared once handled. -->
 
@@ -33,7 +38,7 @@
   + [ ] HUMAN_REVIEW_REQUIRED
   + [ ] DECISIONS_CAPTURED
 
-# Active issues
+## Active issues
 
 <!-- Keep only active issues here. Move resolved items to history.md. -->
 

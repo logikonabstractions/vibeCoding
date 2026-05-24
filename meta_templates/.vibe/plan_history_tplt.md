@@ -1,5 +1,3 @@
-**Template file, copy but do not edit**
-
 # Plan History
 
 Archived checkpoints from `.vibe/plan.md`. Full checkpoint content is preserved here; only stub title lines remain in the active plan.

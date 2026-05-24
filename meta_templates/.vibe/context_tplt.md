@@ -1,21 +1,21 @@
-**Template file, copy but do not edit**
+# CONTEXT
 
-# Architecture
+## Architecture
 
   + [Any Architecture-related current issue to keep track of]
 
-# Key Decisions
+## Key Decisions
 
   + [Keep here history of key decisions in the project history]
 
-# Gotchas
+## Gotchas
 
   + [FYI gotchas]
 
-# Hot Files
+## Hot Files
 
   + [Specific code files that are **hot** given the current stage/plan]
 
-# Agent Notes
+## Agent Notes
 
   + Any note the agent wishes to pass forward to future agents working on this

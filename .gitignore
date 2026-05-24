@@ -194,3 +194,9 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
+# vibeCoding — working directories (scaffolded on first run via vibe_scaffold)
+/.architecture/
+/.component/
+/.vibe/
+
+
