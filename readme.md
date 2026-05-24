@@ -8,6 +8,8 @@ This document is human-oriented and not to be considered for agent workflows.
 2. Add `meta_templates/skills/vibe_scaffold/SKILL.md` to Claude skills on your system (typically `~/.claude/skills/`)
 3. Run `claude` in your project's root, then `/vibe_scaffold`
 
+The scaffolding will result in expanded `../.architecture`, `../.component` and `../.vibe` (.e.g at your project root if you've followed the structure)
+
 ## QUICK START — submodule (vibeCoding inside your project)
 
 Use this when vibeCoding is a planning tool nested inside a larger project repo.
